@@ -1,0 +1,189 @@
+.site {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns:  40px 2fr 40px;
+  grid-template-rows:  auto 3fr auto;
+  grid-template-areas:
+  "header header header"
+  "welcome body body"
+  "footer footer footer"
+}
+
+.header{
+  grid-area: header;
+  color: #444;
+
+}
+
+.body{
+  grid-area: body;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "welcome picture"
+  "mission mission"
+  "grooming boarding"
+
+}
+
+.mission{
+  grid-area: mission;
+
+}
+.bigpicture{
+  grid-area: picture;
+  padding: 75px;
+}
+
+.grooming{
+grid-area: grooming;
+grid-gap: 18px;
+}
+
+.boarding{
+grid-area: boarding;S
+grid-gap: 18px;
+
+}
+
+.footer{
+  grid-area: footer;
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "social copyright"
+}
+
+.social{
+  grid-area:social;
+}
+
+.copyright{
+  grid-area:copyright;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+h1 {
+font-family: 'Vast Shadow', cursive;
+font-size: 44px;
+}
+
+h2 {
+font-family: 'Playfair Display', serif;
+font-size: 36px;
+color: #5dc0bc;
+
+}
+
+h3 {
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+color: #978e88;
+}
+
+h4{
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+color: #d34e62;
+
+}
+
+p {
+font-family: 'Raleway', sans-serif;
+font-size: 26px
+}
+
+ul{
+  font-size:24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+background-color: #fff;
+}
+
+header {
+background-color: #5dc0bc;
+text-align: right;
+padding: 34px;
+color: #444444;
+}
+
+main {
+
+}
+
+aside{
+  grid-area: aside;
+}
+
+footer {
+background-color: #5dc0bc;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+color: #177d89;
+}
+
+a:hover {
+  text-decoration: underline;
+    color: #fac8e1;
+
+}
+
+a:active {
+    color: #88dfff;
+}
+
+table{
+  border-style: solid;
+  color: #333;
+  font-size: 28px;
+}
+
+th{
+padding:4px;
+}
+
+td{
+  padding:4px;
+  border-style: solid;
+  border-color: #666;
+}
+
+caption{
+  font-family: 'Oswald', sans-serif;
+  padding: 2px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.floatright{
+  float: right;
+  margin: 12px;
+}
+
+.floatleft{
+  float: left;
+  margin: 12px;
+}
+
+.rounded{
+  border-radius: 20%
+}
+
+.circle{
+  border-radius: 50%;
